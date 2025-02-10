@@ -1,0 +1,14 @@
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/<project-id>/analyze_dataset_qds', '.']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/<project-id>/analyze_dataset_qds']
+
+logsBucket: 'gs://article_generation_bucket'
+options:
+  logging: GCS_ONLY
+
+images:
+- gcr.io/<project-id>/analyze_dataset_qds

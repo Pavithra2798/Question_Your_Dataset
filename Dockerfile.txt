@@ -1,0 +1,8 @@
+FROM python:3.10
+ENV PYTHONUNBUFFERED True
+ENV APP_HOME ./
+COPY . ./
+RUN pip install -r requirements.txt
+WORKDIR $APP_HOME
+# CMD exec uvicorn --port 8080 --host 0.0.0.0 article_video_upload:app
+CMD ["gunicorn", "--timeout", "0", "-b", "0.0.0.0:8080", "app_qds:app"]
