@@ -12,4 +12,4 @@ Leveraging Google Cloud's Vertex AI, "text-bison-32k" model and LangChain, the s
 The prototype successfully demonstrates the ability to analyze datasets and answer complex natural language queries. It accurately retrieves data and identifies patterns, surpassing the capabilities of standard tools like Excel for complex analysis. This technology empowers non-technical users to independently explore their data, gain valuable insights, and make data-driven decisions.
 
 ## **Skills and Technology:**  
-Python, PaLM 2, Prompt Engineering, Pandas, PySpark, Langchain, Cloud Build, Cloud Function, Google Cloud Storage, Vertex AI
+Python, PaLM 2, Prompt Engineering, Pandas, PySpark, Langchain, Cloud Build, Cloud Function, Google Cloud Storage, Vertex AI, HTML, CSS
